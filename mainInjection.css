@@ -2055,8 +2055,7 @@ a.fa-mention { }
 .post_message {
     padding: 10px;
     border: 1px solid var(--forum-blue);
-  margin: 4px 0px 0px;
-  background: var(--gradient_black_background);
+    background: var(--gradient_black_background);
 }
 
 
