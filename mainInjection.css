@@ -1953,7 +1953,7 @@ img.forum-img {
 .post_row {
     background: var(--subcat-button-background);
     display: grid;
-    grid-template-columns: 220px 563px;
+    grid-template-columns: 200px 583px;
     grid-template-rows: 38px auto;
 }
 
