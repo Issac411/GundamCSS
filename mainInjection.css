@@ -2219,12 +2219,6 @@ a.fa-mention { }
  * nth-child(n+4) supprime toutes les cases après la quatrième */
 .profil_contact form div:nth-child(n+4) {display: none}
 
-.profil_content {
-    margin-top: 20px;
-    height: 265px;
-    overflow: auto;
-}
-
 .profil_field {
     margin: 10px 0;
     display: grid;
