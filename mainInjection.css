@@ -1951,7 +1951,7 @@ img.forum-img {
 
 
 .post_row {
-    background: var(--light);
+    background: var(--subcat-button-background);
     display: grid;
     grid-template-columns: 220px 563px;
     grid-template-rows: 38px auto;
@@ -1966,7 +1966,7 @@ div.post_row:last-of-type {/*border-radius: 0 0 5px 5px;*/}
     padding: 10px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--grey);
+    border-bottom: 1px solid var(--forum-blue);
 }
 
 .post_date {flex-grow: 100;}
@@ -2040,8 +2040,8 @@ button.rep-button .rep-nb {
 
 .post_profil {
     padding: 10px;
-    border-right: 1px solid var(--grey);
-    border-bottom: 1px solid var(--grey);
+    border-right: 1px solid var(--forum-blue);
+    border-bottom: 1px solid var(--forum-blue);
 }
 
 /* Lien "@" de mention */
