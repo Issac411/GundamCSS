@@ -164,7 +164,7 @@ body {
     /* background: red; */
 }
 
-.sidebar {
+/*.sidebar {
     position: fixed;
     background-color: #132431;
     inset: 0;
@@ -207,6 +207,61 @@ body {
     width: 22.627416px;
     z-index: 100;
 }
+*/
+
+.sidebar {
+    position: fixed;
+    inset: 0 auto auto 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 15px 10px;
+    z-index: 999;
+
+    height: 95%;
+    width: 50px;
+    margin-left: 15px;
+    margin-top: 20px;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+    overflow: visible; /* important */
+
+    transition:
+        border-color 0.45s ease,
+        box-shadow 0.45s ease,
+        background 0.45s ease;
+}
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-color: #0f0f0f;
+    background-image: url(https://zupimages.net/up/24/04/zbtw.png);
+
+    border: 1px solid var(--forum-blue);
+    box-shadow:
+        rgba(116, 212, 255, 0.15) 0 0 12px,
+        rgba(116, 212, 255, 0.2) 0 0 8px inset;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 1rem + 2px),
+        calc(100% - 1rem + 2px) 100%,
+        0 100%
+    );
+
+    pointer-events: none;
+}
+
 
 .switcheroo__squircle {
     position: relative;
