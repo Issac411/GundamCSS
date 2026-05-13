@@ -1283,17 +1283,19 @@ ul#notif_list a {
 
 /* Conteneur du pseudo */
 .switcheroo__popper {
-  background-color: var(--text);
-  padding: 0.68rem 1rem;
-  position: absolute;
-  width: -webkit-max-content;
-  width: max-content;
-  /*border-radius: 4px;*/
-  z-index: 0;
-  opacity: 0;
-  transition: opacity 64ms var(--ease), transform 128ms var(--ease-bounce);
-  pointer-events: none;
-  color: #fff;
+    background-color: var(--cat-bg);
+    padding: 0.68rem 1rem;
+    border: 1px dashed var(--forum-blue);
+    position: absolute;
+    width: -webkit-max-content;
+    width: max-content;
+    /* border-radius: 4px; */
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 64ms var(
+  --ease), transform 128ms var(--ease-bounce);
+    pointer-events: none;
+    color: #fff;
 }
 
 /* Conteneur du pseudo: si vertical */
@@ -1309,30 +1311,6 @@ ul#notif_list a {
   left: 50%;
   transform-origin: top;
   transform: translateX(-50%) scale(0.98);
-}
-
-/* Flèche tooltip */
-.switcheroo__popper:before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  background-color: var(--text);
-  z-index: -1;
-}
-
-/* Flèche tooltip : si vertical */
-.switcheroo[direction="vertical"] .switcheroo__popper:before {
-  left: -2px;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-/* Flèche tooltip : si horizontal */
-.switcheroo[direction="horizontal"] .switcheroo__popper:before {
-  left: 50%;
-  top: -2px;
-  transform: translateX(-50%) rotate(-45deg);
 }
 
 
