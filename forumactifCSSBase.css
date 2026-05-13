@@ -161,7 +161,7 @@ body {
 }
 
 #content-container div#container {
-    width: 100%;
+    /*width: 100%;*/
     float: left;
     margin-right: -3px
 }
