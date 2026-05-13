@@ -3424,3 +3424,271 @@ center strong {
     grid-column: 1 / -1;
   }
 }
+
+
+/****** REFONTE LISTE DES MEMBRES - VARIABLES UNIQUEMENT ******/
+
+/* Dates / heure */
+#main-content > p,
+#main-content > p.rightside {
+  color: var(--mini_title_light_color);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Titre */
+#main-content > h1.page-title.solo {
+  color: var(--mini_title_color);
+  text-shadow: var(--gundam-blur-text);
+}
+
+/* Bloc recherche / tri */
+form[action*="memberlist"] .panel,
+form[action="{S_MODE_ACTION}"] .panel {
+  background: var(--gradient_black_background);
+  border: 1px solid var(--forum-blue);
+  box-shadow: var(--gundam-blur);
+  padding: 12px;
+}
+
+form[action*="memberlist"] .panel .inner,
+form[action="{S_MODE_ACTION}"] .panel .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form[action*="memberlist"] .h3,
+form[action="{S_MODE_ACTION}"] .h3 {
+  color: var(--mini_title_light_color);
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+}
+
+/* Ligne de filtres */
+form[action*="memberlist"] .panel p,
+form[action="{S_MODE_ACTION}"] .panel p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  color: var(--mini_title_light_color);
+  text-transform: uppercase;
+  font-size: 10px !important;
+}
+
+/* Champs */
+form[action*="memberlist"] input.inputbox,
+form[action="{S_MODE_ACTION}"] input.inputbox,
+form[action*="memberlist"] select,
+form[action="{S_MODE_ACTION}"] select {
+  height: 25px;
+  color: var(--mini_title_light_color);
+  background: var(--gradient_black_background) !important;
+  border: 1px solid var(--forum-blue) !important;
+}
+
+/* Bouton classique */
+form[action*="memberlist"] input.button2,
+form[action="{S_MODE_ACTION}"] input.button2 {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 3px 7px !important;
+  margin-right: 6px;
+
+  color: var(--mini_title_light_color) !important;
+  background: var(--subcat-button-background) !important;
+  border: 1px solid var(--forum-blue) !important;
+
+  text-transform: uppercase;
+  font-size: 10px;
+  box-shadow: none !important;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+form[action*="memberlist"] input.button2:hover,
+form[action="{S_MODE_ACTION}"] input.button2:hover {
+  background: var(--button_hover_full_force) !important;
+  color: var(--text) !important;
+}
+
+/* Conteneur liste */
+.forumbg-table {
+  position: relative;
+  overflow: hidden;
+
+  background: var(--forum-bg) !important;
+  border: 1px solid var(--forum-blue) !important;
+  box-shadow: var(--gundam-blur);
+  padding: 12px;
+}
+
+/* Table */
+#memberlist {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 7px;
+}
+
+/* Réactive l'en-tête si ton CSS global le masque */
+#memberlist thead {
+  display: table-header-group !important;
+}
+
+#memberlist thead th {
+  color: var(--mini_title_light_color);
+  border: 1px solid var(--forum-blue);
+  padding: 8px 6px;
+
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+
+/* Lignes */
+#memberlist tbody tr {
+  background: var(--gradient_black_background);
+  outline: 1px solid var(--forum-blue);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    outline-color 0.25s ease;
+}
+
+#memberlist tbody tr:hover {
+  transform: translateX(3px);
+  outline-color: var(--mini_title_color);
+  box-shadow: var(--gundam-blur);
+}
+
+/* Cellules */
+#memberlist tbody td {
+  padding: 9px 7px;
+  color: var(--mini_title_light_color);
+  vertical-align: middle;
+}
+
+/* Numéro */
+#memberlist tbody td:first-child {
+  color: var(--mini_title_color);
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Avatar + pseudo */
+#memberlist .avatar-mini a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--mini_title_light_color) !important;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+#memberlist .avatar-mini a:hover {
+  color: var(--mini_title_color) !important;
+  text-shadow: var(--gundam-blur-text);
+}
+
+#memberlist .avatar-mini img {
+  width: 42px;
+  height: 42px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border: 1px solid var(--forum-blue);
+  background: var(--forum-bg);
+  box-shadow: var(--gundam-blur);
+}
+
+/* Colonnes centrées */
+#memberlist td.posts,
+#memberlist td.pm,
+#memberlist td.website,
+#memberlist td.point,
+#memberlist th.posts,
+#memberlist th.pm,
+#memberlist th.website,
+#memberlist th.point {
+  text-align: center;
+}
+
+/* Images diverses */
+#memberlist td img {
+  max-width: 42px;
+  max-height: 42px;
+}
+
+#memberlist td.pm img,
+#memberlist td.website img {
+  max-width: 22px;
+  max-height: 22px;
+  filter: drop-shadow(var(--gundam-blur-text));
+}
+
+/* Intérêts */
+#memberlist td.interests,
+#memberlist th.interests {
+  max-width: 180px;
+}
+
+#memberlist td.interests {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Pagination */
+.pagination {
+  margin: 12px 0;
+  text-align: center !important;
+}
+
+.pagination span a,
+.pagination span strong {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 3px 7px;
+  margin-right: 4px;
+
+  color: var(--mini_title_light_color) !important;
+  background: var(--subcat-button-background) !important;
+  border: 1px solid var(--forum-blue) !important;
+
+  text-transform: uppercase;
+  font-size: 10px !important;
+}
+
+.pagination span a:hover,
+.pagination span strong {
+  background: var(--button_hover_full_force) !important;
+  color: var(--text) !important;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .forumbg-table {
+    overflow-x: auto;
+  }
+
+  #memberlist {
+    min-width: 760px;
+  }
+
+  form[action*="memberlist"] .panel p,
+  form[action="{S_MODE_ACTION}"] .panel p {
+    justify-content: flex-start;
+  }
+}
