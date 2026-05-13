@@ -2027,7 +2027,7 @@ fieldset.polls dd.option_voters_list {
     font-size: 1em
 }
 
-.content blockquote {
+blockquote#blank_quote {
     color: #333
 }
 
