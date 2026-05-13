@@ -546,22 +546,6 @@ a.button2,input.button2,button.button2,.external-module .external-more a {
     border: 1px solid #BCBCBC
 }
 
-a.button1,input.button1,a.button2,input.button2,button.button2,.external-module .external-more a {
-    width: auto!important;
-    padding: 2px 3px;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
-    color: #000;
-    background-repeat: repeat-x;
-    background-color: #FAFAFA;
-    background-image: url(https://2img.net/i/fa/prosilver/bg_button.gif);
-    background-position: top;
-    overflow: visible
-}
-
-body:last-child a.button1,input.button1,a.button2,input.button2,button.button2 {
-    padding: 1px 0
-}
-
 a.button1:hover,input.button1:hover,a.button2:hover,input.button2:hover,button.button2:hover,.external-module .external-more a:hover {
     border: 1px solid #1193d4;
     color: #1193d4;
