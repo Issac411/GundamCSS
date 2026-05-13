@@ -1905,19 +1905,6 @@ img.forum-img {
 /*** ------------------------------- ***/
 /*** LISTE DES SUJETS -------------- ***/
 
-.topicslist_row {
-    /*border-radius: 5px;*/
-    padding: 10px;
-    margin-bottom: 10px;
-    display: grid;
-    grid-column-gap: 10px;
-    grid-template-columns: 50px 375px 95px 50px 152px;
-    grid-template-rows: 50px auto;
-    align-items: center;
-}
-
-.topicslist_row:last-child {margin-bottom: 0}
-
 .topicslist-img {
     width: 50px;
     height: 50px;
