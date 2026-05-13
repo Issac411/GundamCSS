@@ -2122,23 +2122,6 @@ a.fa-mention { }
  * Utilisez !important pour personnaliser au-dessus des bases de FA si besoin
  */
 
-/*Balise code*/
-#blank_code {
-    width: 85%;
-    margin: 0 auto;
-    /*border-radius: 5px;*/
-    border: var(--border) !important;
-}
-
-/* titre "code" */
-#blank_code dt {
-    background: var(--grey);
-    /*border-radius: 5px;*/
-    padding: 2px 5px;
-    border: none !important;
-    margin: 0 !important;
-}
-
 /* Sélectionner le code */
 .selectCode { 
     float:right; 
@@ -2147,49 +2130,8 @@ a.fa-mention { }
     font-size: 10px;
 }
 
-/*contenu code*/
-#blank_code code {}
-
-/*Balise spoiler*/
-#blank_spoiler {
-    width: 85%;
-    margin: 0 auto;
-    /*border-radius: 5px;*/
-    border: var(--border) !important;
-}
-
-/*titre "spoiler*/
-#blank_spoiler dt {
-    background: var(--grey);
-    /*border-radius: 5px;*/
-    padding: 2px 5px;
-    border: none !important;
-    margin: 0 !important;
-}
-
 /*contenu spoiler*/
 .spoiler_content {margin: 5px 5px 2px;}
-
-/*Balise citation*/
-blockquote#blank_quote {
-    margin: 15px !important;
-    border: none !important;
-    border-left: 2px solid var(--grey) !important;
-    ;
-}
-
-/*Citation : titre "XXX a écrit"*/
-blockquote#blank_quote cite {}
-
-/*Balise hide*/
-#blank_hide {
-    padding: 10px;
-    width: 85%;
-    margin: 0 auto;
-    /*border-radius: 5px;*/
-    background: var(--lighter);
-    border: none !important;
-}
 
 /*Balise blockquote*/
 blockquote {border: none !important;}
