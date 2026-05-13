@@ -848,13 +848,6 @@ p.rightside {
     margin-right: 5px
 }
 
-dl.codebox {
-    padding: 3px;
-    background-color: #FFF;
-    border: 1px solid #C9D2D8;
-    font-size: 1em
-}
-
 dl.codebox dt {
     text-transform: uppercase;
     border-bottom: 1px solid #CCC;
