@@ -642,8 +642,7 @@ select {
     display: block;
     padding: 5px 8px;
   */
-    background: var(--light);
-    border: var(--border);
+    border: var(--forum-blue);
     /*border-radius: 5px;*/
     text-align: center;
     margin-top: 5px;
