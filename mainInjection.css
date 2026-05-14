@@ -2000,6 +2000,9 @@ div.post_row:last-of-type {/*border-radius: 0 0 5px 5px;*/}
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--forum-blue);
+    background: var(--gundam-panel-bg);
+    filter: drop-shadow(0px 6px 6px black);
+    z-index: 999;
 }
 
 .post_date {flex-grow: 100;}
