@@ -2086,7 +2086,6 @@ a.fa-mention { }
 .online {width: 46px;height: 16px;}
 
 .post_message {
-    padding: 10px;
     border-right: 1px solid var(--forum-blue);
     background: var(--gradient_black_background);
     border-bottom: 1px solid var(--forum-blue);
