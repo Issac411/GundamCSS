@@ -2019,13 +2019,6 @@ ul.profile-icons li {
     padding: 2px;
 }
 
-/*hover d'un bouton d'édition*/
-ul.profile-icons li:hover {
-    background: var(--grey);
-    /*border-radius: 5px;*/
-}
-
-
 /* BOUTON LIKE --- */
 /* Conteneur du bouton like */
 .like_button {
