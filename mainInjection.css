@@ -2778,7 +2778,9 @@ a.forumtitle:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    z-index: 999;
+    border-left: 3px solid var(--mini_title_light_color);
+    margin-left: 5px;
+    padding-left: 5px;
 }
 
 .theme-label {
