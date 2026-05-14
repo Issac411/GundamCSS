@@ -1986,7 +1986,7 @@ img.forum-img {
 .post_row {
     background: var(--subcat-button-background);
     display: grid;
-    grid-template-columns: 200px 694px;
+    grid-template-columns: 200px 693px;
     grid-template-rows: 38px auto;
 }
 
