@@ -765,7 +765,7 @@ p {font-size: 12px !important;}
 .container {
     background: var(--forum-bg);
     border: var(--forum-blue);
-    padding: 8px;
+    /*padding: 8px;*/
     /*border-radius: 5px;*/
 }
 
@@ -1986,7 +1986,7 @@ img.forum-img {
 .post_row {
     background: var(--subcat-button-background);
     display: grid;
-    grid-template-columns: 200px 683px;
+    grid-template-columns: 200px 694px;
     grid-template-rows: 38px auto;
 }
 
