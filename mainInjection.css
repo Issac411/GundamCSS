@@ -2089,6 +2089,8 @@ a.fa-mention { }
     border-right: 1px solid var(--forum-blue);
     background: var(--gradient_black_background);
     border-bottom: 1px solid var(--forum-blue);
+    margin-top: 10px;
+    border-top: 1px solid var(--forum-blue);
 }
 
 
