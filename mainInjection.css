@@ -2778,10 +2778,7 @@ a.forumtitle:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    position: absolute;
-    right: 50px;
     z-index: 999;
-    top: 80vh;
 }
 
 .theme-label {
