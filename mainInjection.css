@@ -164,51 +164,6 @@ body {
     /* background: red; */
 }
 
-/*.sidebar {
-    position: fixed;
-    background-color: #132431;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px 10px;
-    z-index: 999;
-    border: 1px solid var(--forum-blue);
-    box-shadow: rgba(116, 212, 255, 0.15) 0 0 12px,rgba(116, 212, 255, 0.2) 0 0 8px inset;
-    background-color: #0f0f0f;
-    background-image: url(https://zupimages.net/up/24/04/zbtw.png);
-    height: 95%;
-    width: 50px;
-    margin-left: 15px;
-    margin-top: 20px;
-    transition:
-          border-color 0.45s ease,
-          box-shadow 0.45s ease,
-          background 0.45s ease;
-    clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 1rem + 2px),
-    calc(100% - 1rem + 2px) 100%,
-    0 100%
-  );
-}
-
-.sidebar::before {
-    background-color: var(--mainNav-color);
-    bottom: 5px;
-    content: '';
-    display: block;
-    height: 3px;
-    position: absolute;
-    right: -6px;
-    top: auto;
-    transform: rotate(-45deg);
-    width: 22.627416px;
-    z-index: 100;
-}
-*/
-
 .sidebar {
     position: fixed;
     inset: 0 auto auto 0;
@@ -219,22 +174,16 @@ body {
 
     padding: 15px 10px;
     z-index: 999;
-
     height: 95%;
     width: 50px;
     margin-left: 15px;
     margin-top: 20px;
 
     background: transparent;
-    border: none;
-    box-shadow: none;
-
-    overflow: visible; /* important */
-
     transition:
-        border-color 0.45s ease,
-        box-shadow 0.45s ease,
-        background 0.45s ease;
+        border-color 0.95s ease,
+        box-shadow 0.95s ease,
+        background 0.95s ease;
 }
 
 .sidebar::before {
