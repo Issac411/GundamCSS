@@ -900,7 +900,7 @@ form#quick_reply {
 
 /* Barre d'outils de l'éditeur de texte*/
 div.sceditor-toolbar {
-	background: var(--gradient_black_background) !important;
+	background: var(--background-dark-A-plus) !important;
 	border-bottom: var(--forum-blue) !important;
 }
 
