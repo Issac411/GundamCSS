@@ -491,7 +491,7 @@ div#custom-last-topics-container {
       inset 0 0 8px rgba(150, 150, 150, 0.08);
 }
 
-.QEEL_slot.others::after {
+.QEEL_slot.others::after, .post_profil:not(:has(.group-2)):not(:has(.group-3)) .faction_subbar:after {
     content: "";
 
     position: absolute;
