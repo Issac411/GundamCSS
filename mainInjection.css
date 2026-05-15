@@ -608,7 +608,8 @@ form[name=form_login] .content {
 /* Utilisé pour des titres de pages */
 h1, h1.page-title {
     color: var(--mini_title_light_color);
-    margin: 10px 0 20px;
+    /*margin: 10px 0 20px;*/
+	padding: 20px;
     font-size: 18px !important;
     font-weight: 700 !important;
     text-transform: uppercase;
