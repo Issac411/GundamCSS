@@ -907,7 +907,7 @@ a.sceditor-button {
     /*background: var(--light);*/
     /*border: var(--border);*/
   background: var(--transparent);
-  border: 1px var(--mainNav-color) solid;
+  border: 1px var(--forum-blue) solid;
   transition: 2s ease;
     /*border-radius: 5px;*/
     height: 40px;
