@@ -1,5 +1,6 @@
 /** code fait par MOII */
 
+/* We dont want any visible overflow block */
 div#main-content > div[style="overflow:visible"] {
     display: none;
 }
