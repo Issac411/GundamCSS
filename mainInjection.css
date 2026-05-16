@@ -2223,10 +2223,10 @@ a.fa-mention { }
 div#tabs {margin: 20px 0 10px !important;}
 
 /* Permet d'espacer équitablement tout les onglets*/
-#tabs ul {
+/*#tabs ul {
     display: flex;
     justify-content: space-between;
-}
+}*/
 
 /* Onglet selectionné */
 /*#tabs li.activetab {
