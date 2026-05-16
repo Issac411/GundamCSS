@@ -640,6 +640,7 @@ select {
     padding: 5px 8px;
   */
     border: var(--forum-blue);
+	width:100%;
     /*border-radius: 5px;*/
     text-align: center;
     margin-top: 5px;
