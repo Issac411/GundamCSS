@@ -1,5 +1,9 @@
 /** code fait par MOII */
 
+div#main-content > div[style="overflow:visible"] {
+    display: none;
+}
+
 #fa_toolbar, #fa_right, #notif_list, li {
     color: var(--mini_title_color) !important;
 }
