@@ -2706,7 +2706,7 @@ a.forumtitle:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    border-left: 3px solid var(--mini_title_light_color);
+    border-left: 1px solid var(--mini_title_light_color);
     margin-left: 5px;
     padding-left: 5px;
 }
