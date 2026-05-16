@@ -625,8 +625,8 @@ select {
 /* Conteneur de l'ascenseur
  * Sert essentiellement à définir où le placer dans la page */
 .elevator {
-    position: fixed;
-    bottom: 20px;
+  /*  position: fixed;
+    bottom: 20px;*/
   /*
     right: 10px;
     width: 100px;
