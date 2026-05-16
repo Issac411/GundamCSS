@@ -745,17 +745,6 @@ p {font-size: 12px !important;}
     clear: both;
 }
 
-/* Mise en valeur d'un lien spécial */
-a.specials_links,
-.specials_links a,
-span.specials_links {
-    background: var(--grey);
-    /*border-radius: 5px;*/
-    height: 24px;
-    padding: 2px 8px;
-    
-}
-
 /* On retire les liens spéciaux vide (pour les invités) */
 a.specials_links:empty,
 .specials_links a:empty,
