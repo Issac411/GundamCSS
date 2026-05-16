@@ -1462,7 +1462,7 @@ ul#notif_list a {
   
 }*/
 
-.navbar {
+.navbar, #tabs {
     position: relative;
     overflow: visible;
 
