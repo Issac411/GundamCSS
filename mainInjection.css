@@ -480,6 +480,7 @@ div#custom-last-topics-container {
 body {
     /*background: var(--grey);*/
     /*font-family: 'Open Sans';*/
+  font-size: 12px;
   background-image: url(https://i.servimg.com/u/f79/20/65/29/64/ace-co10.png);
 }
 
@@ -668,8 +669,7 @@ select {
  ****** Sélecteurs généraux s'appliquant à plusieurs reprises sur tout le forum ******/
 
 /* S'applique à TOUS les éléments du forum*/
-body { box-sizing: border-box; /*évite que les éléments soient agrandis par le padding*/
-    font-size: 12px;}
+* { box-sizing: border-box; /*évite que les éléments soient agrandis par le padding*/}
 
 /*** ------------------------------- ***/
 /*** LIENS ET TEXTE -------------------- ***/
