@@ -1856,22 +1856,6 @@ img.forum-img {
 #users_here br {display: none}
 
 
-/* OUTILS DE MODÉRATION D'UN FORUM ---*/
-/*Supprime le texte inutile*/
-#moderation_forum_tools, #moderation_forum_tools strong {
-  font-size: 0px;
-}
-
-/* Lien de modération du forum */
-#moderation_forum_tools a {
-  background: var(--grey);
-  /*border-radius: 5px;*/
-  height: 24px;
-  padding: 2px 8px;
-}
-
-
-
 /*** ------------------------------- ***/
 /*** LISTE DES SUJETS -------------- ***/
 
