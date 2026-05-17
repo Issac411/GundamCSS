@@ -668,7 +668,7 @@ select {
  ****** Sélecteurs généraux s'appliquant à plusieurs reprises sur tout le forum ******/
 
 /* S'applique à TOUS les éléments du forum*/
-* { box-sizing: border-box; /*évite que les éléments soient agrandis par le padding*/
+body { box-sizing: border-box; /*évite que les éléments soient agrandis par le padding*/
     font-size: 12px;}
 
 /*** ------------------------------- ***/
