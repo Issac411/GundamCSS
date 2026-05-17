@@ -1972,7 +1972,6 @@ fieldset.polls dd.option_voters_list {
     min-height: 3em;
     overflow: hidden;
     line-height: 1.4em;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
     font-size: 1em
 }
 
@@ -1981,7 +1980,6 @@ blockquote#blank_quote {
 }
 
 .content p {
-    font-family: Verdana,Arial,Helvetica,sans-serif;
     font-size: 1.2em;
     margin-bottom: 1em;
     line-height: 1.4em
@@ -2231,7 +2229,6 @@ ul.profile-icons li a:hover {
 
 #message-box textarea {
     color: #e1e1e1;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
     width: 80%
 }
 
@@ -2261,7 +2258,6 @@ form#quick_reply #textarea_content iframe#text_editor_iframe {
 
 .editor-message-box textarea {
     color: #e1e1e1;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
     width: 80%;
     font-size: 1.2em
 }
@@ -2661,7 +2657,6 @@ body.chatbox {
     font-size: 12px;
     background-color: #;
     color: #104489;
-    font-family: Verdana,Arial,Helvetica,sans-serif
 }
 
 #chatbox_members ul,#chatbox_channels ul {
@@ -2762,7 +2757,6 @@ body.chatbox {
 #chatbox_contextmenu p {
     margin: 0;
     padding: 1px 4px;
-    font-family: verdana,arial,sans-serif;
     background: #;
     border-bottom: 1px solid #777
 }
@@ -2807,7 +2801,6 @@ body.chatbox {
     background-color: #cadceb;
     background-image: none;
     color: #105289;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
     font-size: 12px;
     padding: .5em .25em;
     text-align: center
@@ -2898,7 +2891,6 @@ table.forumline {
 table.forumline td.catHead {
     text-align: left;
     color: #fff;
-    font-family: Arial,Helvetica,sans-serif,Verdana,Arial,Helvetica,sans-serif;
     text-transform: uppercase;
     font-size: .85em;
     font-weight: 700;
@@ -3833,12 +3825,10 @@ ul.profile_field_list>li {
 .attachbox dl.file {
     border-top: 1px solid #;
     display: block;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
     margin-bottom: 10px
 }
 
 dl.file dt {
-    font-family: Verdana,Arial,Helvetica,sans-serif;
     font-weight: 700;
     padding: 0;
     text-transform: none;
@@ -4901,7 +4891,6 @@ ul.topiclist.bg_none {
 }
 
 #at_msg,#at16p label,#at16nms,#at_share .at_item,#at16p,#at15s,#at16p form input,#at16p form textarea {
-    font-family: arial,helvetica,tahoma,verdana,sans-serif!important;
     font-size: 12px!important;
     outline-style: none;
     outline-width: 0;
@@ -5336,7 +5325,6 @@ div.atclear {
 
 #at16clb {
     font-size: 16pt;
-    font-family: "verdana bold",verdana,arial,sans-serif
 }
 
 #at_share .at_item {
@@ -5417,7 +5405,6 @@ div.atclear {
     margin: 0 auto;
     margin-top: -185px;
     margin-left: -155px;
-    font-family: arial,helvetica,tahoma,verdana,sans-serif;
     font-size: 12px;
     color: #5e5e5e;
     z-index: 10000001
@@ -5544,7 +5531,7 @@ a#at16pit {
     margin-bottom: 8px;
     font-weight: 400;
     padding: 3px;
-    font-family: arial,helvetica,tahoma,verdana,sans-serif;
+
     font-size: 11px;
     line-height: 1.4em;
     color: #333
@@ -5628,7 +5615,7 @@ a#at16pit {
     outline-style: none;
     outline-width: 0;
     padding: 2px 0 0;
-    font-family: arial,helvetica,tahoma,verdana,sans-serif;
+
     font-size: 12px
 }
 
