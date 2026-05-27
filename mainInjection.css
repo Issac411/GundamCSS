@@ -272,13 +272,13 @@ body {
 }
 
 #custom-last-topics-container > .module {
-	width:250px;
+	width:260px;
   	height:400px;
   	overflow-y:auto;
 }
 
 div#custom-last-topics-container {
-	width: 250px;
+	width: 260px;
   	background-color: var(--gradient_black_background);
 }
 
