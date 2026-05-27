@@ -297,7 +297,7 @@ div#custom-last-topics-container {
 
 .derniers_messages {
     color: var(--mini_title_light_color);
-    background: linear-gradient(            90deg,            rgba(116,212,255,0.18),            rgba(116,212,255,0.04)        );
+    background: var(--qeel-bg);
     padding: 8px;
     text-transform: uppercase;
     /* filter: drop-shadow(rgb(150 150 250) 0px 0px 8px); */
