@@ -302,6 +302,9 @@ div#custom-last-topics-container {
     text-transform: uppercase;
     /* filter: drop-shadow(rgb(150 150 250) 0px 0px 8px); */
     border: 1px solid var(--forum-blue);
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    font-size: 11px;
 }
 
 .bottom_row {
