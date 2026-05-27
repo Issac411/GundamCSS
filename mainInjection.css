@@ -296,13 +296,12 @@ div#custom-last-topics-container {
 }
 
 .derniers_messages {
-  	color: white;
-  	background-color: var(--forum-blue);
-  	padding: 10px;
-  	text-transform: uppercase;
-  	/*
-  	filter: drop-shadow(rgb(150 150 250) 0px 0px 8px);
-  	*/
+    color: var(--mini_title_light_color);
+    background: linear-gradient(            90deg,            rgba(116,212,255,0.18),            rgba(116,212,255,0.04)        );
+    padding: 8px;
+    text-transform: uppercase;
+    /* filter: drop-shadow(rgb(150 150 250) 0px 0px 8px); */
+    border: 1px solid var(--forum-blue);
 }
 
 .bottom_row {
