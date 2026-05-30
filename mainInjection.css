@@ -1842,16 +1842,6 @@ img.forum-img {
     margin-right: 3px;
 }
 
-
-/* BOUTONS DE SUJET ---* 
- * (réutilisé dans l'affichage d'un sujet (viewtopic_body) et les MP (privmsgs_body) */
-.buttons {
-    background: var(--grey);
-    padding: 1px 8px;
-    margin-right: 5px;
-    /*border-radius: 5px;*/
-}
-
 .buttons:hover {background: var(--lighter);}
 
 /*ne pas retirer*/
