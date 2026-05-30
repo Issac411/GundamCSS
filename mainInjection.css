@@ -1842,8 +1842,6 @@ img.forum-img {
     margin-right: 3px;
 }
 
-.buttons:hover {background: var(--lighter);}
-
 /*ne pas retirer*/
 #users_here br {display: none}
 
