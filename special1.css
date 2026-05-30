@@ -1381,6 +1381,7 @@ form[name="form_login"] .button1:hover {
 }
 
 .description_presentation,
+.description_presentation_actuelle
 .histoire_presentation {
     margin: 18px 0;
     padding: 18px;
@@ -1402,6 +1403,7 @@ form[name="form_login"] .button1:hover {
 
 .description_presentation::before,
 .histoire_presentation::before,
+.description_presentation_actuelle:before,
 .hrp_presentation::before {
     display: block;
 
@@ -1416,6 +1418,10 @@ form[name="form_login"] .button1:hover {
 
 .description_presentation::before {
     content: "Description physique & mentale (10 lignes minimum)";
+}
+
+.description_presentation_actuelle::before {
+    content: "Situation actuelle de votre personnage, ainsi que ses éventuels changements physiques";
 }
 
 .histoire_presentation::before {
