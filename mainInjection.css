@@ -142,7 +142,7 @@ table.forumline {
   	background-repeat: no-repeat;
   	pointer-events: none;
   	z-index: 10;
- 	top: 30%;
+ 	top: 2%;
   	left: 50%;
   	transform: translateX(-50%);
   	width: 20vw;
