@@ -134,21 +134,6 @@ table.forumline {
   display: none;
 }
 
-#banner::after {
-        content: "";
-  	position: absolute;
- 	background-image: url("https://i.servimg.com/u/f79/20/65/29/64/origin10.png"); /* Image du logo */
-  	background-size: contain;
-  	background-repeat: no-repeat;
-  	pointer-events: none;
-  	z-index: 10;
- 	top: 2%;
-  	left: 50%;
-  	transform: translateX(-50%);
-  	width: 20vw;
-  	height: 20vw;
-}
-
 #page-header {
 	margin-top: -55px;
   	position:relative;
