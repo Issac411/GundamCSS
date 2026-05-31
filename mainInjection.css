@@ -999,6 +999,7 @@ ul#notif_list a {
     object-position: center;
     width: 38px; /*30px*/
     height: 38px; /*30px*/
+	object-position: center top;
     /*border-radius: 3px;*/
 }
 
@@ -1116,7 +1117,8 @@ ul#notif_list a {
   width: 28px; /*30px*/
   height: 28px; /*30px*/
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
+
   /*border-radius: 50%;
   transition: border-radius 128ms var(--ease);*/
   position: relative;
