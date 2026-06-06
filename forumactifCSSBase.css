@@ -101,7 +101,7 @@ html {
 }
 
 body {
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     color: #e1e1e1;
     background-color: #fff;
     background-image: url(https://i.servimg.com/u/f79/20/65/29/64/ace-co10.png);
@@ -212,7 +212,7 @@ body {
 }
 
 h1.page-title {
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     font-weight: 400;
     color: #104489;
     font-size: 2em;
@@ -227,7 +227,7 @@ h1.gallery-title {
 }
 
 h2 {
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     font-weight: 400;
     color: #104489;
     font-size: 2em;
@@ -239,7 +239,7 @@ h1.solo {
 }
 
 h3,.h3 {
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     text-transform: uppercase;
     border-bottom: 1px solid #006683;
     margin-bottom: 3px;
@@ -274,11 +274,11 @@ input {
     vertical-align: middle;
     padding: 0 3px;
     font-size: 1em;
-    font-family: Verdana,Arial,Helvetica,sans-serif
+    font-family: roboto,Arial,Helvetica,sans-serif
 }
 
 select {
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     font-weight: 400;
     cursor: pointer;
     vertical-align: middle;
@@ -292,7 +292,7 @@ option {
 }
 
 textarea {
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     width: 60%;
     padding: 2px;
     font-size: 1em;
@@ -321,7 +321,7 @@ p.center {
 p.author {
     margin: 0 15em .6em 0;
     padding: 0 0 5px 0;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     font-size: 1em;
     line-height: 1.2em
 }
@@ -339,7 +339,7 @@ p.path {
 
 fieldset {
     border-width: 0;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     font-size: 1.1em
 }
 
@@ -464,7 +464,7 @@ a.forumtitle:active {
 }
 
 a.topictitle {
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     font-size: 1.1em;
     font-weight: 700;
     color: #104489;
@@ -672,7 +672,7 @@ fieldset.submit-buttons input {
 }
 
 fieldset.polls {
-    font-family: Verdana,Arial,Helvetica,sans-serif
+    font-family: roboto,Arial,Helvetica,sans-serif
 }
 
 fieldset.polls dl {
@@ -1016,7 +1016,7 @@ li.header dt,li.header dd {
     padding-top: 2px;
     padding-bottom: 2px;
     font-size: 1em;
-    font-family: Arial,Helvetica,sans-serif,Verdana,Arial,Helvetica,sans-serif;
+    font-family: Arial,Helvetica,sans-serif,roboto,Arial,Helvetica,sans-serif;
     text-transform: uppercase
 }
 
@@ -1497,7 +1497,7 @@ td.avatar-mini img {
 }
 
 dl.faq {
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     font-size: 1.1em;
     margin-top: 1em;
     margin-bottom: 2em;
@@ -1908,7 +1908,7 @@ fieldset.polls dd.option_voters_list {
     margin: 0 0 .3em 0!important;
     text-transform: none;
     border: none;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     line-height: 125%;
     color: #e1e1e1;
     font-weight: 700
@@ -6292,7 +6292,7 @@ ul.AD_ListInline,ul.AD_ListInline>li {
 .panel .AD_SectionTitle p {
     border-bottom: 1px solid #006683;
     color: #006683;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     font-size: 1.05em;
     margin: .5em 0;
     padding-bottom: 2px;
@@ -6635,7 +6635,7 @@ a.AD_Title {
     width: 95%;
     margin: 0 10px;
     color: #104489;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: roboto,Arial,Helvetica,sans-serif;
     font-size: 1.1em;
     font-weight: 700;
     line-height: 1.5em;
@@ -8649,7 +8649,7 @@ body>.award_tooltiptext.left::after,.dd_award.left .award_tooltiptext::after {
     height: 30px;
     background-color: #333;
     color: #FFF;
-    font-family: Helvetica,Verdana,Arial;
+    font-family: Helvetica,roboto,Arial;
     font-size: 16px;
     z-index: 20002
 }
