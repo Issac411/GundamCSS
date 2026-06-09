@@ -1689,8 +1689,6 @@ form[name="form_login"] .button1:hover {
         border-color 0.3s ease,
         box-shadow 0.3s ease,
         background 0.3s ease;
-
-    resize: vertical;
 }
 
 /* Focus */
