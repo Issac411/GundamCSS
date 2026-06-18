@@ -2277,7 +2277,6 @@ div#tabs li:nth-child(5) { display: none;}
 /*** AFFICHAGE D'UN MESSAGE PRIVÉ -- ***/
 
 .message {
-    background: var(--light);
     /*border-radius: 5px;*/
     display: grid;
     grid-template-columns: 220px auto;
