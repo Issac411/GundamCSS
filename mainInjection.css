@@ -2279,7 +2279,7 @@ div#tabs li:nth-child(5) { display: none;}
 .message {
     /*border-radius: 5px;*/
     display: grid;
-    grid-template-columns: 220px auto;
+    grid-template-columns: 200px 693px;
     grid-template-rows: 38px auto;
 }
 
