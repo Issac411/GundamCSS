@@ -2398,7 +2398,7 @@ textarea#ms-html-code {
     font-weight: 900;
 }
 
-.post_row > .post_itself img {
+.post_row > div > div > .post_itself img {
     width: 100%;
 }
 
