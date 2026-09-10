@@ -3449,7 +3449,7 @@ form[action="{S_MODE_ACTION}"] input.button2:hover {
   height: 42px;
 
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
 
   border: 1px solid var(--forum-blue);
   background: var(--forum-bg);
