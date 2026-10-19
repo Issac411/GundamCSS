@@ -3633,3 +3633,525 @@ dl#blank_hide {
 .gg-logbook-header > h2 {
 	border-bottom: none !important;
 }
+
+
+/* =====================================================
+   GUNDAM GENESIS — GÉNÉRATEUR DE CARNET DE BORD
+   ===================================================== */
+
+#gg-logbook-generator {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 20px;
+
+    color: var(--mini_title_light_color);
+    background: var(--gradient_QEEL_background);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur);
+}
+
+/* Titres du générateur */
+
+#gg-logbook-generator > h2,
+#gg-logbook-generator > h3 {
+    display: block !important;
+    margin: 20px 0 12px;
+    padding: 10px 14px;
+
+    color: var(--mini_title_color);
+    background: var(--gundam-panel-bg);
+    border: 1px solid var(--forum-blue);
+
+    text-transform: uppercase;
+    letter-spacing: .10em;
+    font-size: 12px !important;
+    font-weight: 900;
+}
+
+#gg-logbook-generator > h2 {
+    margin-top: 0;
+    font-size: 16px !important;
+    text-align: center;
+    text-shadow: var(--gundam-blur-text);
+}
+
+/* Champs du formulaire */
+
+.gg-logbook-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.gg-logbook-fields label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    color: var(--mini_title_color);
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+/* Physique et histoire sur toute la largeur */
+
+.gg-logbook-fields label:has(textarea) {
+    grid-column: 1 / -1;
+}
+
+/* Inputs, textarea et select */
+
+#gg-logbook-generator input,
+#gg-logbook-generator textarea,
+#gg-logbook-generator select {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 12px;
+
+    color: var(--mini_title_light_color) !important;
+    background: var(--background-dark-A-plus) !important;
+    border: 1px solid var(--forum-blue) !important;
+
+    font-family: inherit;
+    font-size: 12px;
+    box-shadow: var(--gundam-blur-less);
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+#gg-logbook-generator input:focus,
+#gg-logbook-generator textarea:focus,
+#gg-logbook-generator select:focus {
+    outline: none;
+    border-color: var(--button_hover_full_force) !important;
+    box-shadow: var(--gundam-blur);
+}
+
+#gg-logbook-generator textarea {
+    resize: vertical;
+    line-height: 1.6;
+}
+
+#gg-logbook-generator input::placeholder,
+#gg-logbook-generator textarea::placeholder {
+    color: var(--mini_title_light_color);
+    opacity: .45;
+}
+
+/* Boutons */
+
+#gg-logbook-generator button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 34px;
+    padding: 9px 14px;
+    margin: 8px 0;
+
+    color: var(--mini_title_light_color);
+    background: var(--subcat-button-background);
+    border: 1px solid var(--forum-blue);
+
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: 10px;
+    font-weight: 900;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        box-shadow .25s ease;
+}
+
+#gg-logbook-generator button:hover {
+    color: var(--neutralDark);
+    background: var(--button_hover_full_force);
+    box-shadow: var(--gundam-blur);
+}
+
+/* =====================================================
+   ÉDITEUR DE LISTE RP
+   ===================================================== */
+
+#gg-log-rp-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gg-log-rp-editor {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.5fr) 110px 36px;
+    align-items: center;
+    gap: 7px;
+
+    padding: 8px;
+    background: var(--forum-bg);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur-less);
+}
+
+#gg-logbook-generator .gg-rp-remove {
+    width: 36px;
+    min-height: 36px;
+    margin: 0;
+    padding: 0;
+
+    color: #ff7474;
+    border-color: rgba(236,37,63,.38);
+    font-size: 17px;
+}
+
+#gg-logbook-generator .gg-rp-remove:hover {
+    background: #EC253F;
+    color: white;
+}
+
+/* Bouton ajouter un RP */
+
+#gg-log-add-rp {
+    margin-top: 12px !important;
+}
+
+/* =====================================================
+   PRÉVISUALISATION ET EXPORT
+   ===================================================== */
+
+#gg-log-preview {
+    padding: 12px;
+    min-height: 100px;
+
+    background: var(--background-dark-A-plus);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur-less);
+}
+
+#gg-log-preview .gg-logbook {
+    margin: 0 auto;
+}
+
+#gg-log-output {
+    min-height: 200px;
+    resize: vertical;
+
+    font-family: monospace !important;
+    font-size: 11px !important;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+#gg-log-copy {
+    width: 100%;
+}
+
+/* =====================================================
+   CARNET DE BORD — BASE
+   ===================================================== */
+
+.gg-logbook {
+    --log-accent: #74D4FF;
+    --log-border: rgba(116,212,255,.34);
+    --log-soft: rgba(116,212,255,.08);
+
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 18px;
+
+    color: var(--mini_title_light_color);
+    background: var(--forum-bg);
+    border: 1px solid var(--log-border);
+    box-shadow: var(--gundam-blur-less);
+}
+
+/* Fédération : bleu fixe */
+
+.gg-logbook.federation {
+    --log-accent: #74D4FF;
+    --log-border: rgba(116,212,255,.34);
+    --log-soft: rgba(116,212,255,.08);
+}
+
+/* Zéon : rouge fixe */
+
+.gg-logbook.zeon {
+    --log-accent: #EC253F;
+    --log-border: rgba(236,37,63,.38);
+    --log-soft: rgba(236,37,63,.08);
+}
+
+/* =====================================================
+   EN-TÊTE DU CARNET
+   ===================================================== */
+
+.gg-logbook-header {
+    margin-bottom: 14px;
+    padding: 12px 14px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--log-soft),
+            rgba(10,13,20,.88)
+        );
+
+    border: 1px solid var(--log-border);
+    box-shadow: var(--gundam-blur-less);
+}
+
+.gg-logbook-code {
+    display: block;
+    margin-bottom: 6px;
+
+    color: var(--log-accent);
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    font-size: 9px;
+    font-weight: 900;
+}
+
+/* Grade + nom sur la même ligne */
+
+.gg-logbook-identity {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 7px;
+}
+
+.gg-logbook-rank {
+    color: var(--log-accent);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.gg-logbook-name {
+    color: var(--mini_title_light_color);
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+/* =====================================================
+   SECTIONS DU CARNET
+   ===================================================== */
+
+.gg-logbook-section {
+    margin: 10px 0;
+    padding: 13px 15px;
+
+    color: var(--mini_title_light_color);
+    background: var(--cat-bg);
+
+    border-left: 3px solid var(--log-accent);
+    border-top: 1px solid var(--log-border);
+    border-bottom: 1px solid var(--log-border);
+
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.gg-logbook-section h3 {
+    display: block !important;
+    margin: 0 0 10px !important;
+    padding: 0;
+
+    color: var(--log-accent);
+    text-transform: uppercase;
+    letter-spacing: .10em;
+    font-size: 11px !important;
+    font-weight: 900;
+}
+
+.gg-logbook-physical,
+.gg-logbook-history {
+    color: var(--mini_title_light_color);
+    text-align: justify;
+    line-height: 1.65;
+}
+
+/* =====================================================
+   REGISTRE DES OPÉRATIONS RP
+   ===================================================== */
+
+.gg-logbook-rps {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.gg-log-rp {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    min-height: 38px;
+    padding: 7px 10px;
+
+    background: var(--log-soft);
+    border: 1px solid var(--log-border);
+
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        opacity .25s ease;
+}
+
+.gg-log-rp-name {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    font-weight: 700;
+}
+
+.gg-log-rp-name a {
+    color: var(--mini_title_light_color) !important;
+    text-decoration: none !important;
+}
+
+.gg-log-rp-name a:hover {
+    color: var(--log-accent) !important;
+}
+
+.gg-log-rp-status {
+    color: var(--log-accent);
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+/* =====================================================
+   RP EN COURS — HARO
+   ===================================================== */
+
+.gg-log-rp[data-status="en-cours"]::before {
+    content: "";
+    display: block;
+    flex: 0 0 26px;
+
+    width: 26px;
+    height: 26px;
+
+    background:
+        url("https://i.servimg.com/u/f79/20/65/29/64/haro_r10.png")
+        center / contain no-repeat;
+}
+
+/* Haro rouge pour Zéon */
+
+.gg-logbook.zeon
+.gg-log-rp[data-status="en-cours"]::before {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(25%)
+        sepia(95%)
+        saturate(3000%)
+        hue-rotate(335deg);
+}
+
+/* =====================================================
+   RP TERMINÉ
+   ===================================================== */
+
+.gg-log-rp[data-status="termine"] {
+    opacity: .82;
+}
+
+/* =====================================================
+   RP ABANDONNÉ
+   ===================================================== */
+
+.gg-log-rp[data-status="abandonne"] {
+    background: rgba(100,100,100,.12);
+    border-color: rgba(150,150,150,.25);
+    filter: grayscale(1);
+    opacity: .48;
+}
+
+.gg-log-rp[data-status="abandonne"] .gg-log-rp-name {
+    text-decoration: line-through;
+    text-decoration-color: #999;
+}
+
+.gg-log-rp[data-status="abandonne"] .gg-log-rp-status {
+    color: #aaa;
+}
+
+/* Aucun Haro sur les RP abandonnés */
+
+.gg-log-rp[data-status="abandonne"]::before {
+    display: none;
+}
+
+/* =====================================================
+   AUCUN RP
+   ===================================================== */
+
+.gg-log-rp-empty {
+    padding: 12px;
+
+    color: var(--mini_title_light_color);
+    background: var(--subcat-button-background);
+    border: 1px dashed var(--log-border);
+
+    opacity: .65;
+    text-align: center;
+    font-style: italic;
+}
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 650px) {
+
+    #gg-logbook-generator {
+        padding: 12px;
+    }
+
+    .gg-logbook-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .gg-logbook-fields label:has(textarea) {
+        grid-column: auto;
+    }
+
+    .gg-log-rp-editor {
+        grid-template-columns: 1fr;
+    }
+
+    #gg-logbook-generator .gg-rp-remove {
+        width: 100%;
+    }
+
+    .gg-logbook {
+        padding: 10px;
+    }
+
+    .gg-logbook-name {
+        font-size: 13px;
+    }
+
+    .gg-logbook-identity {
+        gap: 5px;
+    }
+
+    .gg-log-rp {
+        flex-wrap: wrap;
+    }
+
+    .gg-log-rp-status {
+        margin-left: auto;
+    }
+}
