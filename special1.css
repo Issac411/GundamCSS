@@ -2618,3 +2618,1018 @@ textarea#ms-html-code {
 	height:350px !important;
 }
 
+
+.gg-music-panel {
+    position: fixed;
+    left: 78px;
+    bottom: 35px;
+    width: 420px;
+    max-height: 590px;
+    z-index: 999;
+    display: none;
+    color: var(--mini_title_light_color);
+    background: var(--gradient_QEEL_background);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur);
+}
+
+.gg-music-panel.is-open {
+    display: block;
+}
+
+.gg-music-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: var(--mini_title_color);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .12em;
+    border-bottom: 1px solid var(--forum-blue);
+    text-shadow: var(--gundam-blur-text);
+}
+
+.gg-music-close {
+    cursor: pointer;
+    border: 1px solid var(--forum-blue);
+    background: var(--subcat-button-background);
+    color: var(--mini_title_light_color);
+    font-weight: 600;
+    padding: 2px 8px;
+}
+
+.gg-music-close:hover {
+    background: var(--button_hover_full_force);
+    color: var(--neutralDark);
+}
+
+.gg-music-current {
+    padding: 12px;
+    background: rgba(10,13,20,.65);
+    border-bottom: 1px solid var(--forum-blue);
+}
+
+.gg-music-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--mini_title_light_color);
+}
+
+.gg-music-category {
+    margin-top: 4px;
+    font-size: 10px;
+    color: var(--mini_title_color);
+    text-transform: uppercase;
+}
+
+.gg-music-progress {
+    width: 100%;
+    height: 8px;
+    margin-top: 10px;
+    background: rgba(12,16,24,.9);
+    border: 1px solid var(--forum-blue);
+    cursor: pointer;
+}
+
+.gg-music-progress-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--button_hover_full_force);
+    box-shadow: var(--gundam-blur-text);
+}
+
+.gg-music-controls {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+}
+
+.gg-music-controls button {
+    flex: 1;
+    padding: 8px;
+    cursor: pointer;
+    color: var(--mini_title_light_color);
+    background: var(--subcat-button-background);
+    border: 1px solid var(--forum-blue);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.gg-music-controls button:hover,
+.gg-song:hover,
+.gg-song.is-active {
+    background: var(--button_hover_full_force) !important;
+    color: var(--neutralDark) !important;
+}
+
+.gg-music-list {
+    overflow-y: auto;
+    padding: 8px;
+}
+
+.gg-song {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6px;
+    margin-bottom: 6px;
+    padding: 8px;
+    cursor: pointer;
+    background: rgba(116,212,255,.06);
+    border-left: 2px solid var(--mini_title_color);
+    color: var(--mini_title_light_color);
+}
+
+.gg-song-name {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.gg-song-meta {
+    font-size: 9px;
+    opacity: .75;
+}
+
+.gg-song-duration {
+    font-size: 10px;
+    color: var(--mini_title_color);
+}
+
+@media (max-width: 700px) {
+    .gg-music-panel {
+        left: 10px;
+        right: 10px;
+        bottom: 20px;
+        width: auto;
+    }
+}
+
+.gg-music-volume {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 0 10px 10px;
+    color: var(--mini_title_color);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.gg-music-volume input[type="range"] {
+    width: 100%;
+    accent-color: var(--button_hover_full_force);
+    cursor: pointer;
+}
+
+.gg-music-category-block {
+    margin-bottom: 10px;
+}
+
+.gg-music-category-title {
+    margin: 10px 0 6px;
+    padding: 6px 8px;
+    color: var(--mini_title_light_color);
+    background: var(--gundam-panel-bg);
+    border: 1px solid var(--forum-blue);
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-size: 10px;
+    font-weight: 900;
+    box-shadow: var(--gundam-blur-less);
+}
+
+.gg-music-search {
+    padding: 10px;
+    border-bottom: 1px solid var(--forum-blue);
+}
+
+.gg-music-search input {
+    width: 100%;
+    padding: 8px 10px;
+    color: var(--mini_title_light_color) !important;
+    background: rgba(10,13,20,.85);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur-less);
+    text-transform: uppercase;
+}
+
+.gg-music-search input:focus {
+    outline: none;
+    border-color: var(--button_hover_full_force);
+    box-shadow: var(--gundam-blur);
+}
+
+.gg-music-context-menu {
+    position: fixed;
+    z-index: 999;
+    display: none;
+    min-width: 210px;
+    padding: 6px;
+    background: var(--gradient_QEEL_background);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur);
+}
+
+.gg-music-context-menu.is-open {
+    display: block;
+}
+
+.gg-music-context-menu button {
+    width: 100%;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: var(--mini_title_light_color);
+    background: var(--subcat-button-background);
+    border: 1px solid rgba(116,212,255,.22);
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.gg-music-context-menu button:hover {
+    color: var(--neutralDark);
+    background: var(--button_hover_full_force);
+}
+
+.forum_lastpost .gensmall {
+	color: var(--mini_title_light_color) !important;
+}
+
+.gg-music-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.gg-music-filter-toggle,
+.gg-music-close {
+    cursor: pointer;
+    border: 1px solid var(--forum-blue);
+    background: var(--subcat-button-background);
+    color: var(--mini_title_light_color);
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.gg-music-filter-toggle:hover,
+.gg-music-close:hover {
+    background: var(--button_hover_full_force);
+    color: var(--neutralDark);
+}
+
+.gg-music-filter-panel {
+    display: none;
+    padding: 8px;
+    background: rgba(10,13,20,.78);
+    border-bottom: 1px solid rgba(116,212,255,.22);
+}
+
+.gg-music-filter-panel.is-open {
+    display: block;
+}
+
+.gg-music-filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.gg-music-filter-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 7px;
+    cursor: pointer;
+    color: var(--mini_title_light_color);
+    background: var(--subcat-button-background);
+    border: 1px solid rgba(116,212,255,.24);
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.gg-music-filter-item input {
+    accent-color: var(--button_hover_full_force);
+}
+
+.gg-music-filter-item:hover {
+    border-color: var(--button_hover_full_force);
+    box-shadow: var(--gundam-blur-less);
+}
+
+.gg-music-panel {
+    resize: both;
+    overflow: auto;
+
+    min-width: 320px;
+    min-height: 360px;
+
+    max-width: calc(100vw - 100px);
+    max-height: calc(100vh - 70px);
+}
+
+.gg-music-panel {
+    display: none;
+    flex-direction: column;
+}
+
+.gg-music-panel.is-open {
+    display: flex;
+}
+
+.gg-music-list {
+    flex: 1;
+    min-height: 120px;
+    max-height: none;
+    overflow-y: auto;
+}
+
+.mission-gen {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 18px;
+    color: var(--mini_title_light_color);
+    background: var(--gradient_QEEL_background);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur);
+}
+
+.mission-gen-title {
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    color: var(--mini_title_light_color);
+    border-bottom: 1px solid var(--forum-blue);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.mission-gen-grid {
+    display: grid;
+    gap: 14px;
+}
+
+.mission-gen-section {
+    padding: 14px;
+    background: var(--gradient_black_background);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur-less);
+}
+
+.mission-gen label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--mini_title_color);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.mission-gen input,
+.mission-gen textarea,
+#mission-output {
+    width: 100%;
+    padding: 10px;
+    color: var(--mini_title_light_color) !important;
+    background: var(--gradient_black_background);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur-less);
+}
+
+.mission-gen textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#mission-output {
+    min-height: 220px;
+    font-family: monospace;
+    font-size: 11px;
+}
+
+.mission-difficulty-switch {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+}
+
+.mission-difficulty-switch input {
+    display: none;
+}
+
+.mission-difficulty-switch label {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: var(--mini_title_light_color);
+    background: var(--subcat-button-background);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur-less);
+    transition: 0.25s ease;
+}
+
+#mission-d:checked + label {
+    background: rgba(80,255,140,0.18);
+    border-color: rgba(80,255,140,0.55);
+}
+
+#mission-c:checked + label {
+    background: rgba(116,212,255,0.20);
+    border-color: rgba(116,212,255,0.65);
+}
+
+#mission-b:checked + label {
+    background: rgba(255,195,80,0.18);
+    border-color: rgba(255,195,80,0.65);
+}
+
+#mission-a:checked + label {
+    background: rgba(255,120,80,0.22);
+    border-color: rgba(255,120,80,0.75);
+}
+
+#mission-s:checked + label {
+    background: rgba(236,37,63,0.28);
+    border-color: rgba(236,37,63,0.85);
+    box-shadow: 0 0 14px rgba(236,37,63,0.24);
+}
+
+.mission-difficulty-preview {
+    margin-top: 12px;
+    padding: 12px;
+    background: rgba(10,13,20,0.72);
+    border-left: 3px solid var(--mini_title_color);
+    border-top: 1px solid rgba(116,212,255,0.22);
+    border-bottom: 1px solid rgba(116,212,255,0.12);
+}
+
+.mission-difficulty-preview.danger {
+    border-left-color: rgba(236,37,63,0.85);
+    background: linear-gradient(90deg, rgba(236,37,63,0.14), rgba(10,13,20,0.82));
+}
+
+.mission-difficulty-preview.attention {
+    border-left-color: rgb(236 120 37 / 85%);
+    background: linear-gradient(90deg, rgb(236 101 37 / 14%), rgba(10, 13, 20, 0.82));
+}
+
+.mission-difficulty-preview strong {
+    display: block;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.mission-difficulty-preview ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.mission-gen button {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    color: var(--mini_title_light_color);
+    background: var(--subcat-button-background);
+    border: 1px solid var(--forum-blue);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.mission-gen button:hover {
+    background: var(--button_hover_full_force);
+    color: var(--neutralDark);
+}
+
+.mission-sheet-title {
+    margin-bottom: 18px;
+    padding: 12px;
+    color: var(--mini_title_light_color);
+    background: var(--gundam-panel-bg);
+    border: 1px solid var(--forum-blue);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 18px;
+    font-weight: 900;
+    text-shadow: var(--gundam-blur-text);
+}
+
+.mission-sheet-section {
+    margin: 14px 0;
+    padding: 16px;
+    background: var(--gradient_black_background);
+    border-left: 3px solid var(--mini_title_color);
+    border-top: 1px solid rgba(116,212,255,0.22);
+    border-bottom: 1px solid rgba(116,212,255,0.12);
+    box-shadow: var(--gundam-blur-less);
+}
+
+.mission-sheet-label {
+    margin-bottom: 8px;
+    color: var(--mini_title_color);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.mission-sheet-content {
+    color: rgba(223,246,255,0.86);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.mission-rank-a .mission-sheet-section,
+.mission-rank-s .mission-sheet-section {
+    border-left-color: rgba(236,37,63,0.8);
+}
+
+.mission-rank-s .mission-sheet-title {
+    background: linear-gradient(90deg, rgba(236,37,63,0.28), rgba(10,13,20,0.88));
+    border-color: rgba(236,37,63,0.65);
+}
+
+dl#field_id4 > dd > div > a:after {
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 120px;
+    background: var(--button_hover_full_force);
+    height: 7px;
+}
+
+dl#field_id4 > dd > div > a {
+    margin-top: 5px;
+    display: block;
+}
+
+.briefing-gen {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 18px;
+    color: var(--mini_title_light_color);
+    background: var(--gradient_QEEL_background);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur);
+}
+
+.briefing-gen-title {
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    color: var(--mini_title_color);
+    border-bottom: 1px solid var(--forum-blue);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: var(--gundam-blur-text);
+}
+
+.briefing-gen-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.briefing-gen-section {
+    padding: 14px;
+    background: var(--gradient_black_background);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur-less);
+}
+
+.briefing-gen-section.full {
+    grid-column: 1 / -1;
+}
+
+.briefing-gen label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--mini_title_color);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.briefing-gen input,
+.briefing-gen textarea {
+    width: 100%;
+    padding: 10px;
+    color: var(--mini_title_light_color) !important;
+    background: var(--gradient_black_background);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur-less);
+}
+
+.briefing-gen textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#briefing-output {
+    min-height: 240px;
+    font-family: monospace;
+    font-size: 11px;
+}
+
+.briefing-gen button {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    color: var(--mini_title_light_color);
+    background: var(--subcat-button-background);
+    border: 1px solid var(--forum-blue);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.briefing-gen button:hover {
+    background: var(--button_hover_full_force);
+    color: var(--neutralDark);
+}
+
+.briefing-gen-hint {
+    margin-top: 8px;
+    color: var(--light);
+    font-size: 11px;
+}
+
+/* Fiche générée */
+
+.briefing-sheet-title {
+    margin-bottom: 18px;
+    padding: 12px;
+    color: var(--mini_title_light_color);
+    background: var(--gundam-panel-bg);
+    border: 1px solid var(--forum-blue);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 18px;
+    font-weight: 900;
+    text-shadow: var(--gundam-blur-text);
+}
+
+.briefing-sheet-meta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.briefing-sheet-meta > div,
+.briefing-sheet-section {
+    padding: 14px;
+    background: var(--gradient_black_background);
+    border: 1px solid rgba(116,212,255,0.22);
+    box-shadow: var(--gundam-blur-less);
+}
+
+.briefing-sheet-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--mini_title_color);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.briefing-sheet-content {
+    color: rgba(223,246,255,0.86);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.briefing-sheet-section {
+    margin: 14px 0;
+    border-left: 3px solid var(--mini_title_color);
+}
+
+.briefing-sheet-rewards {
+    border-left-color: rgba(80,255,140,0.75);
+}
+
+@media (max-width: 700px) {
+    .briefing-gen-grid,
+    .briefing-sheet-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .briefing-gen-section.full {
+        grid-column: auto;
+    }
+}
+
+#DM_response_zone, .buttons a[href="/privmsg?mode=post"] {
+    display: inline-flex !important;
+    align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+#DM_response_zone a, .buttons a[href="/privmsg?mode=post"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 28px;
+    padding: 6px 12px;
+
+    color: var(--mini_title_light_color) !important;
+    background: var(--subcat-button-background);
+    border: 1px solid var(--forum-blue) !important;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 10px;
+    font-weight: 900;
+
+    box-shadow: var(--gundam-blur-less);
+    transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+#DM_response_zone a img, .buttons a[href="/privmsg?mode=post"] img {
+    display: none !important;
+}
+
+#DM_response_zone a::before, .buttons a[href="/privmsg?mode=post"]::before {
+    content: "Repondre";
+}
+
+#DM_response_zone a:hover, .buttons a[href="/privmsg?mode=post"]:hover {
+    background: var(--button_hover_full_force) !important;
+    color: var(--neutralDark) !important;
+    box-shadow: var(--gundam-blur);
+}
+
+div#cp-main > #ucp > .panel > div fieldset > dl > dd > img {
+    max-width: 250px;
+}
+
+span.mini-text-description {
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.gg-predef-list {
+    max-width: 850px;
+    margin: 24px auto;
+    padding: 18px;
+    color: var(--mini_title_light_color);
+    background: var(--gradient_QEEL_background);
+    border: 1px solid var(--forum-blue);
+    box-shadow: var(--gundam-blur);
+}
+
+.gg-predef-section {
+    margin-bottom: 22px;
+}
+
+.gg-predef-section:last-child {
+    margin-bottom: 0;
+}
+
+.gg-predef-section-title {
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    border: 1px solid;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.gg-predef-section.zeon .gg-predef-section-title {
+    color: var(--zeon-color);
+    border-color: rgba(214,52,73,.40);
+    background: linear-gradient(90deg, rgba(214,52,73,.18), rgba(12,16,24,.92));
+    text-shadow: 0 0 8px var(--zeon-glow);
+}
+
+.gg-predef-section.federation .gg-predef-section-title {
+    color: var(--federation-color);
+    border-color: rgba(88,182,255,.40);
+    background: linear-gradient(90deg, rgba(88,182,255,.18), rgba(12,16,24,.92));
+    text-shadow: 0 0 8px var(--federation-glow);
+}
+
+.gg-predef-row {
+    display: grid;
+    grid-template-columns: 58px 1fr 90px 44px;
+    align-items: center;
+    gap: 10px;
+
+    min-height: 64px;
+    margin-bottom: 7px;
+    padding: 7px 10px;
+
+    border: 1px solid;
+    box-shadow: var(--gundam-blur-less);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        opacity 0.25s ease,
+        filter 0.25s ease;
+}
+
+.gg-predef-row:hover {
+    transform: translateX(2px);
+}
+
+.gg-predef-row.zeon {
+    border-color: rgba(214,52,73,.40);
+    background:
+        linear-gradient(90deg, rgba(214,52,73,.08), rgba(255,255,255,0)),
+        rgba(12,16,24,.90);
+}
+
+.gg-predef-row.federation {
+    border-color: rgba(88,182,255,.40);
+    background:
+        linear-gradient(90deg, rgba(88,182,255,.08), rgba(255,255,255,0)),
+        rgba(12,16,24,.90);
+}
+
+.gg-predef-avatar {
+    position: relative;
+    overflow: hidden;
+
+    width: 48px;
+    height: 48px;
+
+    background: var(--forum-bg);
+    border: 1px solid;
+
+    transform-origin: center center;
+
+    transition:
+        transform .25s cubic-bezier(.22,.61,.36,1),
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.gg-predef-row.zeon .gg-predef-avatar {
+    border-color: rgba(214,52,73,.40);
+    box-shadow:
+        0 0 10px rgba(214,52,73,.18),
+        inset 0 0 6px rgba(214,52,73,.10);
+}
+
+.gg-predef-row.federation .gg-predef-avatar {
+    border-color: rgba(88,182,255,.40);
+    box-shadow:
+        0 0 10px rgba(88,182,255,.18),
+        inset 0 0 6px rgba(88,182,255,.10);
+}
+
+.gg-predef-row.zeon:hover .gg-predef-avatar {
+    transform: translateX(6px) scale(1.5);
+    border-color: rgba(214,52,73,.40);
+    z-index: 15;
+}
+
+.gg-predef-row.federation:hover .gg-predef-avatar {
+    transform: translateX(6px) scale(1.5);
+    z-index: 15;
+}
+
+.gg-predef-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: filter .25s ease;
+}
+
+.gg-predef-name {
+    color: var(--mini_title_light_color);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.gg-predef-status {
+    margin-top: 3px;
+    color: rgba(180,255,190,0.82);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.gg-predef-row.unavailable {
+    opacity: 0.38;
+    filter: grayscale(1);
+    pointer-events: none;
+}
+
+.gg-predef-row.unavailable .gg-predef-status {
+    color: rgba(255,120,120,0.9);
+}
+
+.gg-predef-row.unavailable .gg-predef-avatar {
+    box-shadow: none;
+}
+
+.gg-predef-stars {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 900;
+    text-shadow: 0 0 8px currentColor;
+}
+
+.gg-predef-stars.stars-1 {
+    color: rgb(110,255,150);
+}
+
+.gg-predef-stars.stars-2 {
+    color: rgb(255,210,80);
+}
+
+.gg-predef-stars.stars-3 {
+    color: rgb(255,85,85);
+}
+
+.gg-predef-faction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gg-predef-faction img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+@media (max-width: 650px) {
+    .gg-predef-row {
+        grid-template-columns: 48px 1fr 70px 32px;
+        gap: 7px;
+        padding: 7px;
+    }
+
+    .gg-predef-avatar {
+        width: 42px;
+        height: 42px;
+    }
+
+    .gg-predef-name {
+        font-size: 10px;
+    }
+
+    .gg-predef-stars {
+        font-size: 12px;
+    }
+
+    .gg-predef-faction img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.panel.bg1 > .inner > .column1 > .left-box.details:nth-child(3) {
+    display: none;
+}
+
+dl#field_id-7, dl#field_id-12 {
+    display: none;
+}
+
+.right > form > .vf_jumpbox > select > option, .fields1 > dl > dd > select > option {
+	color:black !important;
+}
+
+dl#blank_hide {
+    background-color: rgb(22,22,80);
+}
+
+.post_message img {
+    width: 100%;
+}
+
+.gg-logbook-header > h2 {
+	border-bottom: none !important;
+}
