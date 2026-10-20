@@ -4155,3 +4155,25 @@ dl#blank_hide {
         margin-left: auto;
     }
 }
+
+.gg-logbook-rps {
+    display: block;
+    color: var(--mini_title_light_color);
+    line-height: 1.65;
+    text-align: justify;
+    overflow-wrap: anywhere;
+}
+
+.gg-logbook-rps a {
+    color: var(--log-accent) !important;
+    text-decoration: underline;
+}
+
+.gg-logbook-rps a:hover {
+    color: var(--button_hover_full_force) !important;
+}
+
+#gg-log-rps {
+    min-height: 180px;
+    resize: vertical;
+}
