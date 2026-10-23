@@ -573,7 +573,7 @@ form[name="form_login"] fieldset {
 }
 
 form[name="form_login"] dl {
-    margin-bottom: 18px;
+    #margin-bottom: 18px;
 }
 
 form[name="form_login"] dt {
