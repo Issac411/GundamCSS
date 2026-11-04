@@ -1619,6 +1619,7 @@ img.forum-img {
 .forum_stats {
     font-weight: 600;
     float: right;
+	margin-left: auto;
 }
 
 
