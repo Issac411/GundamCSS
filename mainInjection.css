@@ -3176,10 +3176,6 @@ form[name="privmsg_list"] > div:last-of-type {
   border-left: 1px solid var(--forum-blue);
 }
 
-.topicslist-lastpost a {
-  color: var(--mini_title_color) !important;
-}
-
 .topicslist-lastpost img {
   max-width: 18px;
   max-height: 18px;
