@@ -3118,10 +3118,6 @@ form[name="privmsg_list"] > div:last-of-type {
   text-transform: uppercase;
 }
 
-.topic-author a {
-  color: var(--mini_title_color) !important;
-}
-
 /* Stats */
 .topicslist-stats {
   display: flex;
