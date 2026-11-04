@@ -3627,7 +3627,7 @@ dl#blank_hide {
 }
 
 .post_message img {
-    width: 100%;
+    width: auto;
 }
 
 .gg-logbook-header > h2 {
