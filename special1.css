@@ -451,7 +451,7 @@
 .post_itself .rp-side-profile {
 	position: absolute !important;
 	top: 37px;
-	right: -200px;
+	right: -250px;
 	background: var(--gradient_black_background);
 	border-top: 1px solid var(--forum-blue);
 	border-right: 1px solid var(--forum-blue);
