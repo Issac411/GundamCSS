@@ -2398,10 +2398,6 @@ textarea#ms-html-code {
     font-weight: 900;
 }
 
-.post_row > div > div > .post_itself img {
-    width: 100%;
-}
-
 .ms-modules-list {
     display: flex;
     flex-direction: column;
